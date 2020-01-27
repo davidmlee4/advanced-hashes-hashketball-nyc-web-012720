@@ -123,7 +123,8 @@ def shoe_size(sought_player_name)
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player| #only one block parameter when iterating over an array
-          binding.pry
+          if player[:player_name] == sought_player_name
+            return player[:shoe]
         end
       end
     end
