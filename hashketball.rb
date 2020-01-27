@@ -121,7 +121,7 @@ end
 def shoe_size(sought_player_name)
   game_hash.each do |place, team| #hash.each what comes before .each should be each hash you are iterating over
     team.each do |attribute, data|
-      if attribute == :players #if hash = :players key
+      if attribute == :players #if hash key = :players key
         data.each do |player| #only one block parameter when iterating over an array
           if player[:player_name] == sought_player_name
             return player[:shoe]
