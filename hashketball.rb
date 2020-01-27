@@ -170,7 +170,6 @@ def player_stats(sought_player_name) #this is going to return player as a key an
         data.each do |player|
           binding.pry
           if player[:player_name] == sought_player_name
-            binding.pry
           end
         end
       end
