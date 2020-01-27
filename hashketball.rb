@@ -168,7 +168,6 @@ def player_stats(sought_player_name) #this is going to return player as a key an
     team.each do |attributes, data|
       if attributes == :players #so again we must do this if statement because this hash containts three keys with the last key leading to a AoH
         data.each do |player|
-          binding.pry
           if player[:player_name] == sought_player_name
             result = player
           end
