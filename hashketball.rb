@@ -190,7 +190,6 @@ def big_shoe_rebounds
         data.each do |player|
           binding.pry
       end
-      binding.pry
     end
   end
 
