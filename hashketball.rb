@@ -162,8 +162,15 @@ nums = []
   nums
 end
 
-def player_stats(sought_player_name)
-
+def player_stats(sought_player_name) #this is going to return player as a key and the stats for the values
+  result = {}
+  game_hash.each do |place, team|
+    team.each do |attributes, data|
+      binding.pry
+      if data == :players
+      end
+    end
+  end
 end
 
 def big_shoe_rebounds
