@@ -147,17 +147,19 @@ def team_names
 end
 
 def player_numbers(team_name)
+nums = []
   game_hash.each do |place,team|
     if team[:team_name] == team_name
       team.each do |attribute, data|
         if attribute == :players #you must do this if statement if there is a hash but only one key of the hash leads to an array/hash
-          data.map do |player| #block parameter should represent the hash/array as a whole (data in this case represented by player)
-            player[:number]
+          data.each do |player| #block parameter should represent the hash/array as a whole (data in this case represented by player)
+            nums << player[:number]
           end
         end
       end
     end
   end
+  nums
 end
 
 def player_stats(sought_player_name)
