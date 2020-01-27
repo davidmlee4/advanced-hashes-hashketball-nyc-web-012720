@@ -105,7 +105,7 @@ end
 
 def num_points_scored(sought_player_name)
   #return num of points for player passed in
-  result = {} 
+  result = {}
   binding.pry
 end
 
