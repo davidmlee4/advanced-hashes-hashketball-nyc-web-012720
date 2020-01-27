@@ -119,7 +119,7 @@ def num_points_scored(sought_player_name)
 end
 
 def shoe_size(sought_player_name)
-  game_hash.each do |place, team|
+  game_hash.each do |place, team| #hash.each what comes before .each should be each hash you are iterating over
     team.each do |attribute, data|
       if attribute == :players
         data.each do |player|
