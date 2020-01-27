@@ -119,12 +119,12 @@ def num_points_scored(sought_player_name)
 end
 
 def shoe_size(sought_player_name)
-
-game_hash.each do |place, team|
-  team_each.do |attribute, data|
-binding.pry
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      
+    end
   end
-end
+
 
 end
 
