@@ -149,10 +149,10 @@ end
 def player_numbers(team_name)
 
   game_hash.each do |place,team|
-    if team == team_name 
+    if team == team_name
       team.each do |attribute, data|
         if attribute == :players #you must do this if statement if there is a hash but only one key of the hash leads to an array/hash
-          
+
 
   end
 end
