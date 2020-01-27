@@ -104,7 +104,8 @@ def game_hash
 end
 
 def num_points_scored(sought_player_name)
-  result = {}
+  #return num of points for player passed in
+  result = {} 
   binding.pry
 end
 
