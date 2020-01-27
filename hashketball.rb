@@ -107,7 +107,11 @@ def num_points_scored(sought_player_name)
   #return num of points for player passed in
   game_hash.each do |place, team|
     team.each do |attribute, data|
-    binding.pry
+      if attribute == :players
+        data.each do |player|
+          binding.pry
+        end
+      end
     end
   end
 end
