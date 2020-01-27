@@ -147,7 +147,9 @@ def team_names
 end
 
 def player_numbers(team_name)
-
+  game_hash.collect do |place,team|
+    binding.pry
+  end
 end
 
 def player_stats(sought_player_name)
