@@ -190,6 +190,7 @@ def big_shoe_rebounds
         data.each do |player|
           if player[:shoe].max
             biggest_shoe = player[:shoe] 
+            num_rebounds = player[:rebounds]
           end
           binding.pry
         end
