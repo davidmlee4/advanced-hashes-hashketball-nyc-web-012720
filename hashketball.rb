@@ -123,6 +123,7 @@ def shoe_size(sought_player_name)
 game_hash.each do |place, team|
   team_each.do |attribute, data|
 binding.pry
+  end
 end
 
 end
