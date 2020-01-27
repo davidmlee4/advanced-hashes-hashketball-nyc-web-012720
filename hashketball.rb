@@ -184,17 +184,12 @@ def big_shoe_rebounds
   biggest_shoe = 0
   num_rebounds = 0
 
-  game_hash.each do |team, game_data|
-    game_data[:players].each do |player|
-      if player[:shoe] > biggest_shoe
-        biggest_shoe = player[:shoe]
-        num_rebounds = player[:rebounds]
-      end
-    end
-  end
+
 
   num_rebounds
 end
+
+# BONUS QUESTIONS
 
 def iterate_through_players_for(name, statistic)
   game_hash.each do |team, game_data|
@@ -225,7 +220,6 @@ def player_with_most_of(statistic)
   player_name
 end
 
-# BONUS QUESTIONS
 def most_points_scored
   player_with_most_of(:points)
 end
