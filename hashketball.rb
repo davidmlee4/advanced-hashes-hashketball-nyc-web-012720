@@ -154,6 +154,10 @@ def player_numbers(team_name)
         if attribute == :players #you must do this if statement if there is a hash but only one key of the hash leads to an array/hash
           data.collect do |player| #block parameter should represent the hash/array as a whole (data in this case represented by player)
             player[:number]
+          end
+        end
+      end
+    end
   end
 end
 
