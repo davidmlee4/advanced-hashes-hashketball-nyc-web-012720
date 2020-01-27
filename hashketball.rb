@@ -121,6 +121,7 @@ end
 def shoe_size(sought_player_name)
   game_hash.each do |place, team|
     team.each do |attribute, data|
+      binding.pry
       if attribute == :players
         data.each do |player|
         end
