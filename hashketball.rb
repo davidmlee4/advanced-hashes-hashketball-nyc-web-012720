@@ -106,7 +106,9 @@ end
 def num_points_scored(sought_player_name)
   #return num of points for player passed in
   result = {}
-  binding.pry
+  game_hash.each do |place, team|
+    binding.pry
+  end
 end
 
 def shoe_size(sought_player_name)
