@@ -150,7 +150,7 @@ def player_numbers(team_name)
   game_hash.each do |place,team|
     team.each do |attribute, data|
       data.collect do |player|
-        
+
       binding.pry
       end
     end
